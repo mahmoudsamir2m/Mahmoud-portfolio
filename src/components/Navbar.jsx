@@ -79,7 +79,7 @@ export default function Navbar() {
       </header>
 
       {/* Mobile Bottom App-like Nav */}
-      <nav className="fixed bottom-0 left-0 w-full glass z-50 border-t border-white/5 md:hidden pb-safe">
+      <nav className="fixed bottom-0 left-0 right-0 glass z-50 border-t border-white/5 md:hidden pb-safe">
         <div className="flex justify-around items-center h-16 px-2 relative">
           <AnimatePresence>
             {navLinks.map((link) => {
