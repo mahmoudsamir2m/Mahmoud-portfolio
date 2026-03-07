@@ -105,7 +105,7 @@ export default function Contact() {
                 <p className="text-sm text-slate-500 block">Email</p>
                 <a
                   href="mailto:mahmoudsamir2m@gmail.com"
-                  className="hover:text-primary-400 transition-colors text-lg break-all"
+                  className="hover:text-primary-400 transition-colors text-sm sm:text-base md:text-lg break-all"
                 >
                   mahmoudsamir2m@gmail.com
                 </a>
@@ -120,7 +120,7 @@ export default function Contact() {
                 <p className="text-sm text-slate-500 block">Phone</p>
                 <a
                   href="tel:+1234567890"
-                  className="hover:text-primary-400 transition-colors text-lg"
+                  className="hover:text-primary-400 transition-colors text-sm sm:text-base md:text-lg"
                 >
                   +2 01550200831
                 </a>
@@ -133,7 +133,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-sm text-slate-500 block">Location</p>
-                <span className="text-lg">Cairo, Egypt</span>
+                <span className="text-sm sm:text-base md:text-lg">Cairo, Egypt</span>
               </div>
             </div>
           </div>
