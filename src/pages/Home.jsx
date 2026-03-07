@@ -63,7 +63,7 @@ function TypewriterEffect() {
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-center w-full px-6 py-15  md:pt-0 md:pb-0">
+    <div className="flex flex-col items-center justify-center min-h-screen text-center w-full px-6 py-8  md:py-0 ">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full min-h-screen bg-primary-600/20 rounded-full blur-[120px] -z-10" />
 
