@@ -5,10 +5,9 @@ import { useState, useEffect } from 'react';
 import meImg from '../assets/me.jpg';
 
 const phrases = [
-  "Modern Web Experiences",
-  "Interactive User Interfaces",
-  "Scalable React Apps",
-  "Responsive Designs"
+  "Building Luxury Apps",
+  "Delivering Scalable Code",
+  "Crafting Pixel-Perfect UI",
 ];
 
 function TypewriterEffect() {
@@ -46,9 +45,9 @@ function TypewriterEffect() {
   }, [text, isDeleting, loopNum, typingSpeed]);
 
   return (
-    <span className="block h-[40px] sm:h-[48px] md:h-[72px] lg:h-[80px] w-full mt-2">
-      <span className="inline-flex items-center justify-center whitespace-nowrap text-2xl sm:text-3xl md:text-5xl lg:text-6xl">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600 drop-shadow-sm">
+    <span className="block min-h-9.75 sm:min-h-13 md:min-h-[97.5px]  w-full mt-2">
+      <span className="inline-flex  items-center min-h-full justify-center whitespace-nowrap text-2xl sm:text-3xl md:text-5xl lg:text-6xl">
+        <span className="text-transparent min-h-full  leading-relaxed bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600 drop-shadow-sm">
           {text}
         </span>
         <motion.span 
@@ -112,7 +111,7 @@ export default function Home() {
         className="font-bold tracking-tight mb-4 md:mb-6 text-white w-full flex flex-col items-center"
       >
         <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center">
-          Frontend Developer <br className="md:hidden" /> Crafting
+          Front-End Engineer <br className="md:hidden" />
         </span>
         <TypewriterEffect />
       </motion.h1>
@@ -121,11 +120,11 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-lg md:text-xl text-slate-400 max-w-2xl mb-10"
+        className="text-lg md:text-xl text-slate-400 max-w-2xl mb-10  text-justify md:text-center"
       >
-        I specialize in building responsive, high-performance web applications
-        with React,Next, Tailwind CSS, and modern web technologies. Passionate
-        about UX and clean code.
+        Front-End Engineer specializing in React and Next.js. I architect
+        high-performance, scalable & luxury web experiences with clean code and
+        pixel-perfect precision.
       </motion.p>
 
       <motion.div
