@@ -134,10 +134,10 @@ export default function Home() {
         className="flex flex-col sm:flex-row gap-4"
       >
         <Link
-          to="/projects"
+          to="/about"
           className="group flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-500 text-white px-8 py-3 rounded-full font-medium transition-all shadow-lg shadow-primary-600/25"
         >
-          View Projects
+          About Me
           <ArrowRight
             size={18}
             className="group-hover:translate-x-1 transition-transform"

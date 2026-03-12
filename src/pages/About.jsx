@@ -2,10 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   Code2,
   Monitor,
-  Smartphone,
-  Database,
-  Server,
-  Palette,
+  ArrowRight,
   FileText,
   Download,
   X,
@@ -13,6 +10,7 @@ import {
 import { useState } from "react";
 import cvFile from "../assets/Mahmoud-Samir-CV.pdf";
 import meImg from "../assets/me.jpg";
+import { Link } from "react-router-dom";
 
 const skills = [
   {
@@ -77,11 +75,11 @@ export default function About() {
 
             <div className="flex-grow space-y-4 text-lg text-slate-400">
               <p>
-                I am Mahmoud Samir, a high-performance Frontend
-                Developer dedicated to engineering elite digital experiences. I
-                don't just build interfaces; I architect sophisticated, scalable
-                web applications using React and Next.js to bridge the gap
-                between complex logic and breathtaking design.
+                I am Mahmoud Samir, a high-performance Frontend Developer
+                dedicated to engineering elite digital experiences. I don't just
+                build interfaces; I architect sophisticated, scalable web
+                applications using React and Next.js to bridge the gap between
+                complex logic and breathtaking design.
               </p>
 
               <p>
@@ -97,7 +95,7 @@ export default function About() {
                 within an ambitious development team by deploying technical
                 precision to build the next generation of the web.
               </p>
-              <div className="pt-4">
+              <div className="pt-4 flex gap-4 flex-wrap">
                 <button
                   onClick={() => setIsCVOpen(true)}
                   className="group flex items-center justify-center gap-2 bg-primary-600/20 hover:bg-primary-600/40 border border-primary-500/50 text-primary-300 px-6 py-2.5 rounded-full font-medium transition-all"
@@ -105,6 +103,16 @@ export default function About() {
                   <FileText size={18} />
                   View My CV
                 </button>
+                <Link
+                  to="/projects"
+                  className="group flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-500 text-white px-8 py-3 rounded-full font-medium transition-all shadow-lg shadow-primary-600/25"
+                >
+                  View Projects
+                  <ArrowRight
+                    size={18}
+                    className="group-hover:translate-x-1 transition-transform"
+                  />
+                </Link>
               </div>
             </div>
           </div>
