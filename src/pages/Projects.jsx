@@ -27,7 +27,7 @@ const projects = [
   },
 
   {
-    title: "E-Commerce App",
+    title: "PrimeStore – E-Commerce Platform",
     description:
       "Developed a responsive e-commerce platform using Next.js, React, and Tailwind CSS. Added product cards, wishlist, and integrated payment system. Implemented NextAuth, React Hook Form, and Zod for secure authentication and validation. Deployed on Vercel.",
     image: ecommerceImg,
